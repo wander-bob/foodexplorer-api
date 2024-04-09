@@ -14,7 +14,6 @@ const port = process.env.SERVER_PORT;
 server.use(express.json());
 server.use(cookieParser());
 server.use(cors({
-  origin: "*",
   credentials: true,
 }));
 server.use("/files", express.static(multerConfig.UPLOAD_FOLDER))
