@@ -14,9 +14,7 @@ const port = process.env.SERVER_PORT;
 server.use(express.json());
 server.use(cookieParser());
 server.use(cors({
-  origin: ["https://main--admirable-dodol-bf77d4.netlify.app/"],
   credentials: true,
-  
 }));
 server.use("/files", express.static(multerConfig.UPLOAD_FOLDER))
 server.use(routes);
