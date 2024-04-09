@@ -14,7 +14,7 @@ const port = process.env.SERVER_PORT;
 server.use(express.json());
 server.use(cookieParser());
 server.use(cors({
-  origin: ["http://localhost:5173", "http://127.0.0.1:5173", "https://admirable-dodol-bf77d4.netlify.app/"],
+  origin: ["https://admirable-dodol-bf77d4.netlify.app/"],
   credentials: true,
   
 }));
