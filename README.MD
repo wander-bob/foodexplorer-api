@@ -1,50 +1,54 @@
-# FOOD EXPLORER API
+<h1 align="center"> FOODEXPLOER FRONTEND </h1>
 
-## Instalando as dependências
-`npm install`
+<p align="">
+  Projeto da conclusão da trilha Explorer da Rocketseat, onde criamos um sistema para restaurantes aplicando os conceitos que aprendemos durante a trilha.
+</p>
 
-### Migrations
-O projeto possui no arquivo de server uma instrução para já executar as migrations quando o servidor for criado, porém, caso queira executar manualmente, você pode utilizar o comando abaixo: 
+<p align="center">
+  <a href="#tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#memo-licença">Licença</a>
+</p>
 
-#### Executando a migration
-A execução da primeira migration irá criar o arquivo de banco de dados do SQLite com as tabelas configuradas nos arquivos de migration.
+<p align="center">
+  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000">
+</p>
 
-`npm run migration`
+<br>
 
-#### Seed
-Para facilitar, criei um arquivo de seeds que fica dentro do diretório de bancos de dados, contendo um exemplo de lista de pratos baseado no material do Figma e com contas de usuários aleatórias.
+<p align="center">
+  <img alt="foodexplorer" src="./.github/foodexplorer.gif" width="100%">
+</p>
 
-Quando o script de seed for executado ele irá fazer um reset do banco, então use com extremo cuidado.
+## 🚀 Tecnologias
 
-`npm run seed`
+Esse projeto foi desenvolvido com as seguintes tecnologias:
 
+- <p><a href="https://vitejs.dev/">ViteJS</a></p>
+- <p><a href="https://axios-http.com/docs/intro">Axios</a></p>
+- <p><a href="https://reactrouter.com/">React Router</a></p>
+- <p><a href="https://www.npmjs.com/package/react-icons">React-Icons</a></p>
+- <p><a href="https://splidejs.com/">Splide JS</a></p>
+- <p><a href="https://www.styled-components.com/">Styled Components</a></p>
 
-### Executando o servidor
-#### Em desevnolvimento
-No ambiente de desenvolvimento, a API utiliza o próprio recurso do node que permite a execução e monitoração dos arquivos para reiniciar o servidor no caso de qualquer alteração.
+<br>
+<div style="display: flex; align-itens:center;justify-content: space-evenly; gap: 16px;">
+  <img src="https://cdn.worldvectorlogo.com/logos/vitejs.svg" alt="ViteJs" height="32" width="32"/>
+  <img src="https://cdn.worldvectorlogo.com/logos/logo-javascript.svg" alt="JavaScript" height="32" width=""/>
+  <img src="https://cdn.worldvectorlogo.com/logos/axios.svg" alt="Axios" height="32" width=""/>
+</div>
 
-`npm run dev`
+## 💻 Projeto
 
-#### Em produção
-Já em produção, utilizamos o P2M para manter a aplicação resiliente.
+O Rocket Dash é um exemplo de página de dashboard contendo indicadores de vendas.
 
-<a href="https://pm2.keymetrics.io/">P2M Link</a>
+## 🔖 Layout
 
-`npm start`
+Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/community/file/1210217615683203825). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
 
-### Apenas a título de conhecimento
+## Licença
 
-#### Criação manual dos arquivos de migration
+Esse projeto está sob a licença MIT.
 
-``` 
-npx knex migrate:make createUsers --knexfile .\src\database\knex\config\knexfile.js
-npx knex migrate:make createIngredients --knexfile .\src\database\knex\config\knexfile.js
-npx knex migrate:make createCategories --knexfile .\src\database\knex\config\knexfile.js
-npx knex migrate:make createDishes --knexfile .\src\database\knex\config\knexfile.js
-```
-
-#### Migration para a versão mais atual 
-`npm run migration-up`
-
-#### Rollback
-`npm run migration-down`
+---
