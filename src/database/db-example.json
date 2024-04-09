@@ -1,0 +1,28 @@
+{
+  "users": [
+    { "name": "Zeff", "email": "zeff@baratie.southblue", "password": "allblue", "role": "manager"},
+    { "name": "Sanji", "email": "sanji@baratie.southblue", "password": "allblue", "role": "manager" },
+    { "name": "Fullbody", "email": "fullbody@marine.southblue", "password": "justice", "role": "client" },
+    { "name": "Nami", "email": "nami@muggywara.southblue", "password": "bellmere", "role": "client"}
+  ],
+  "dishes": [
+    { "name": "Salada Ravanello", "description": "Rabanetes, folhas verdes e molho agridoce salpicados com gergelim. O pão naan dá um toque especial.", "category": "meal", "image": "1-meal-1.png", "ingredients": ["alface", "cebola", "pão naan", "pepino", "rabanete", "tomate"], "price": 49.97}, 
+    { "name": "Torradas de Parma", "description": "Presunto de parma e rúcula em um pão com fermentação natural.","category": "meal", "image": "1-meal-3.png", "ingredients": ["presunto", "rúcula", "pão artesanal"], "price": 32.85}, 
+    { "name": "Spaguetti Gambe", "description": "Massa fresca com camarões e pesto.","category": "meal", "image": "1-meal-2.png", "ingredients": ["camarão", "massa spaguetti", "molho pesto"], "price": 79.97}, 
+    { "name": "Salada Molla", "description": "Salada fresca e deliciosa com pepinos, tomate, cebola roxa, cheiro verde, molho da casa e orégano","category": "meal", "image": "1-meal-4.png", "ingredients": ["tomate", "cheiro verde", "cebola" ], "price": 79.97},
+    { "name": "Prugna Pie", "description": "Torta de ameixa com massa amanteigada, polvilho em açúcar.","category": "dessert", "image": "2-dessert-1.png", "ingredients": ["ameixa", "massa doce", "açúcar"], "price": 79.97}, 
+    { "name": "Peachy pastrie", "description": "Delicioso folheado de pêssego com folhas de hortelã.","category": "dessert", "image": "2-dessert-2.png", "ingredients": ["massa folheada", "pessêgo", "hortelã", "açúcar"], "price": 32.97}, 
+    { "name": "Macarons", "description": "Farinha de amêndoas, manteiga, claras e açúcar.","category": "dessert", "image": "2-dessert-3.png", "ingredients": ["farinha de amêndoas", "açúcar", "manteiga", "claras"], "price": 23.45}, 
+    { "name": "Bolo de damasco", "description": "Damascos frescos em uma massa sem glúten.","category": "dessert", "image": "2-dessert-4.png", "ingredients": ["damascos", "massa doce", "hortelã"], "price": 19.97}, 
+    { "name": "Suco de maracujá", "description": "Suco de maracujá gelado, cremoso, docinho.","category": "drink", "image": "3-drinks-2.png", "ingredients": ["maracúja", "água"], "price": 13.97}, 
+    { "name": "Espresso", "description": "Café cremoso feito na temperatura e pressões perfeitas.","category": "drink", "image": "3-drinks-1.png", "ingredients": ["café", "creme de leite", "açúcar"], "price": 15.97}, 
+    { "name": "Tè d'autunno", "description": "Chá de anis, canela e limão. Sinta o outono italiano.","category": "drink", "image": "3-drinks-3.png", "ingredients": ["chá de anis", "canela", "limão"], "price": 19.97}, 
+    { "name": "Pomo bourbon", "description": "Maçã, whisky, canela. On the rocks.","category": "drink", "image": "3-drinks-4.png", "ingredients": ["maçã", "canela", "whisky"], "price": 79.97},
+    { "name": "Batata da Casa", "description": "Batatas assadas com azeite, orégano e recheadas com cheddar vegan", "category" : "meal", "ingredients": ["batata lisa", "cheddar vegano", "orégano", "azeite" ], "price": 17.50}
+  ],
+  "categories":[
+    {"name": "meal", "label": "Refeições"},
+    {"name": "dessert", "label": "Sobremesas"},
+    {"name": "drink", "label": "Bebidas"}
+  ]
+}
