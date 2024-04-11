@@ -7,8 +7,6 @@ const { secret } = require('../configs/auth').jwt;
 class DishesController{
   async create(request, response){
     const { name, description, category, image, price, ingredients } = request.body;
-    const {token} = request.cookies;
-    const  { sub: user_id } = verify(token, secret);
     if(!name){
       throw new AppError("O nome do prato precisa ser informado.")
     }
@@ -20,7 +18,7 @@ class DishesController{
     if(!categoryData){
       throw new AppError("Categoria inválida.");
     }
-    const [{id}] = await knex("dishes").returning("id").insert({name, description, image, price, category_id: categoryData.id, user_id});
+    const [{id}] = await knex("dishes").returning("id").insert({name, description, image, price, category_id: categoryData.id});
 
     if(ingredients && ingredients.length > 0){
       const ingredientsToInsert = ingredients.map((ingredient) => { return {name: String(ingredient).toLowerCase(), dish_id: id}})
@@ -116,7 +114,7 @@ class DishesController{
     }
     try {
       if(dish.image){
-        console.log("deletando")
+        console.log("deletando imagem")
         diskStorage.deleteFile(dish.image)
       }
       await knex('dishes').delete().where({id});
@@ -129,7 +127,6 @@ class DishesController{
   async update(request, response){
     const {id} = request.params;
     const { name, description, category_id, price, ingredients } = request.body;
-    console.log(ingredients)
     try{
       const dish = await knex("dishes")
       .select("id", "name", "description", "price", "category_id")

@@ -1,9 +1,9 @@
 {
   "users": [
-    { "name": "Zeff", "email": "zeff@baratie.southblue", "password": "allblue", "role": "manager"},
-    { "name": "Sanji", "email": "sanji@baratie.southblue", "password": "allblue", "role": "manager" },
-    { "name": "Fullbody", "email": "fullbody@marine.southblue", "password": "justice", "role": "client" },
-    { "name": "Nami", "email": "nami@muggywara.southblue", "password": "bellmere", "role": "client"}
+    { "name": "Zeff", "email": "zeff@baratie.free", "password": "allblue", "role": "manager"},
+    { "name": "Sanji", "email": "sanji@baratie.free", "password": "allblue", "role": "manager" },
+    { "name": "Fullbody", "email": "fullbody@marine.gov", "password": "justice", "role": "client" },
+    { "name": "Nami", "email": "nami@muggywara.free", "password": "bellmere", "role": "client"}
   ],
   "dishes": [
     { "name": "Salada Ravanello", "description": "Rabanetes, folhas verdes e molho agridoce salpicados com gergelim. O pão naan dá um toque especial.", "category": "meal", "image": "1-meal-1.png", "ingredients": ["alface", "cebola", "pão naan", "pepino", "rabanete", "tomate"], "price": 49.97}, 
@@ -18,7 +18,7 @@
     { "name": "Espresso", "description": "Café cremoso feito na temperatura e pressões perfeitas.","category": "drink", "image": "3-drinks-1.png", "ingredients": ["café", "creme de leite", "açúcar"], "price": 15.97}, 
     { "name": "Tè d'autunno", "description": "Chá de anis, canela e limão. Sinta o outono italiano.","category": "drink", "image": "3-drinks-3.png", "ingredients": ["chá de anis", "canela", "limão"], "price": 10.00}, 
     { "name": "Pomo bourbon", "description": "Maçã, whisky, canela. On the rocks.","category": "drink", "image": "3-drinks-4.png", "ingredients": ["maçã", "canela", "whisky"], "price": 79.97},
-    { "name": "Batata da Casa", "description": "Batatas assadas com azeite, orégano e recheadas com cheddar vegan", "category" : "meal", "ingredients": ["batata lisa", "cheddar vegano", "orégano", "azeite" ], "price": 17.50}
+    { "name": "Batata da Casa", "description": "Batatas assadas com azeite, orégano e recheadas com cheddar vegan.", "category" : "meal", "ingredients": ["batata lisa", "cheddar vegano", "orégano", "azeite" ], "price": 17.50}
   ],
   "categories":[
     {"name": "meal", "label": "Refeições"},
