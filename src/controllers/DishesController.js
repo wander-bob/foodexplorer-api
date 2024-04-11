@@ -126,7 +126,7 @@ class DishesController{
   }
   async update(request, response){
     const {id} = request.params;
-    const { name, description, category_id, price, ingredients } = request.body;
+    const { name, description, category, price, ingredients } = request.body;
     try{
       const dish = await knex("dishes")
       .select("id", "name", "description", "price", "category_id")
@@ -134,13 +134,17 @@ class DishesController{
       if(!dish){
         throw new AppError("Prato não encontrado", 404);
       }
+      const categoryData = await knex("categories").where({label: category}).first();
+      if(!categoryData){
+        throw new AppError("Categoria inválida.");
+      }
       const currentIngredients = Array.from(await knex("ingredients").select("name").where("dish_id", id)).map((item)=> item.name);
       const filteredIngredients = ingredients?.length > 0 ? ingredients.filter((ingredient)=> ingredients.indexOf(currentIngredients) && ingredient !== "") : ingredients;
       dish.name = name ?? dish.name;
       dish.description = description ?? dish.description;
       dish.price = price ?? dish.price;
-      dish.category_id = category_id ?? dish.category_id;
-      
+      dish.category_id = categoryData.id ;
+      console.log(dish)
       await knex("dishes").update(dish).where({id});
       if(filteredIngredients.length > 0){
         const ingredientsToInsert = filteredIngredients?.map((ingredient)=>{

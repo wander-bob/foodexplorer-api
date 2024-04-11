@@ -1,6 +1,6 @@
 <h1 align="center"> FOODEXPLOER FRONTEND </h1>
 
-<p align="">
+<p>
   Projeto da conclusão da trilha Explorer da Rocketseat, onde criamos um sistema para restaurantes aplicando os conceitos que aprendemos durante a trilha.
 </p>
 
