@@ -10,7 +10,6 @@ const knex = require("./database/knex");
 const multerConfig = require("./configs/multerConfig");
 const AppError = require("./middlewares/AppError");
 const port = process.env.SERVER_PORT;
-
 server.use(express.json());
 server.use(cookieParser());
 server.use(cors({

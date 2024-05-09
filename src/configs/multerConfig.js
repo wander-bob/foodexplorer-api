@@ -2,7 +2,7 @@ const path = require("node:path");
 const crypto = require("node:crypto");
 const multer = require("multer");
 
-const TEMP_FOLDER  = path.resolve(__dirname, "..", "..", "tmp");
+const TEMP_FOLDER = path.resolve(__dirname, "..", "..", "tmp");
 const UPLOAD_FOLDER = path.resolve(TEMP_FOLDER, "uploads");
 const MULTER = {
   storage: multer.diskStorage({
