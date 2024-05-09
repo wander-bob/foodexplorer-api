@@ -86,7 +86,7 @@ E neles, execute o comando de instalação das dependências:
 5 - Execute as migrações para a criação do banco de dados e o processo de seeding, para ter uma lista de pratos e usuários prévios para já poder utilizar o projeto. 
 
 ```
-  npx run migrate
+  npx run migration
   npx run seed
 ```
 
