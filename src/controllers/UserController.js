@@ -5,6 +5,9 @@ const knex = require("../database/knex");
 class UserController {
   async create(request, response){
     const {name, email, password} = request.body;
+    if(String(password).length < 6){
+      throw new AppError("A senha precisa ter ao menos 6 caracteres.")
+    }
     const passwordHashed = await hash(password, 8);
     try {
       const [{id}] = await knex("users").returning("id").insert({name, email, password: passwordHashed});
