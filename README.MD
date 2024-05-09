@@ -83,8 +83,14 @@ E neles, execute o comando de instalação das dependências:
   npm i
 
 ```
+5 - Execute as migrações para a criação do banco de dados e o processo de seeding, para ter uma lista de pratos e usuários prévios para já poder utilizar o projeto. 
 
-5 - Por fim, basta criar um arquivo `.env` no repositório do backend e nela, criar as variáveis sujeridas no arquivo .env_example e executar o frontend e backend do projeto: 
+```
+  npx run migrate
+  npx run seed
+```
+
+ - Por fim, basta criar um arquivo `.env` no repositório do backend e nela, criar as variáveis sujeridas no arquivo .env_example e executar o frontend e backend do projeto: 
 
 ```
 npm run dev
